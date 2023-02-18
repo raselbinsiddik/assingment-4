@@ -12,8 +12,7 @@
     <nav class="container navbar bg-info-subtle mt-3">
       <div class="container">
         <a class="navbar-brand"
-          ><span class="fs-1">Interactive</span> <br />Geometry Genius</a
-        >
+          ><span class="fs-1">Interactive</span> <br />Geometry Genius</a>
         <button class="bg-primary text-white border-0 rounded-4 fs-1">
           Blog
         </button>
@@ -35,12 +34,12 @@
             </div>
             <div class="card-body">
               <h3 class="card-title mt-4">Triangle</h3>
-              <p class="card-text">Area (A) = <span>0.5</span>*<span>b</span>*<span>h</span></p>
+              <p class="card-text">Area (<span id="area-1">A</span>) = <span id="triangle-1">0.5</span> × <span id="triangle-2">b</span> × <span id="triangle-3">h</span></p>
              
-                <label class="d-inline" for=""><input class="w-25 "  type="text" name="" id="" placeholder="b">cm</label>
-              <label class="d-inline" for=""><input class="w-25 "  type="text" name="" id="" placeholder="h">cm</label>
+                <label class="d-inline" for=""><input  class="w-25 "  type="text" name="" id="inputField-1" placeholder="b">cm</label>
+              <label class="d-inline" for=""><input class="w-25 "  type="text" name="" id="inputField-2" placeholder="h">cm</label>
              
-              <button class="bg-primary text-white border-0 rounded-4 fs-3 mt-4 w-75">Calculate</button>
+              <button id="btn-triangle" class="bg-primary text-white border-0 rounded-4 fs-3 mt-4 w-75">Calculate</button>
             </div>
           </div>
         </div>
@@ -55,7 +54,7 @@
             </div>
             <div class="card-body">
               <h3 class="card-title mt-4">Rectangle</h3>
-              <p class="card-text">Area (A) = <span>w</span> * <span>l</span></p>
+              <p class="card-text">Area (A) = <span>w</span> ×  <span>l</span></p>
 
                <label class="d-inline" for=""><input class="w-25 "  type="text" name="" id="" placeholder="b">cm</label>
               <label class="d-inline" for=""><input class="w-25 "  type="text" name="" id="" placeholder="h">cm</label>
@@ -82,11 +81,11 @@
           </div>
         </div>
         <div class="col">
-          <div class="card h-100">
+          <div class="card h-100 text-center">
             <div class="card-body">
               <h5 class="card-title ">Area Calculation</h5>
               <hr>
-              <p>Triangle:<span></span>cm<sup>2</sup><button class="bg-primary text-white border-0 rounded-4">Calculate</button></p>
+              <p>1. Triangle:<span id="total-area">0</span>cm<sup>2</sup><button class="bg-primary text-white border-0 rounded-2 ms-4">Calculate</button></p>
             </div>
           </div>
         </div>
@@ -152,7 +151,8 @@
         </div>
       </div>
     </section>
-
+<!-- bootstrap js file -->
     <script src="js/bootstrap.min.js"></script>
+    <script src="index.js"></script>
   </body>
 </html>

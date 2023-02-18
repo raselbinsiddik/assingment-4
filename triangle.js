@@ -8,6 +8,7 @@ document.getElementById('btn-triangle').addEventListener('click', function () {
     const triangle1 = document.getElementById('triangle-1');
     const triangle1String = triangle1.innerText;
     const triangle1Field = parseFloat(triangle1String);
+    
 
     const triangle2 = document.getElementById('triangle-2');
     const triangle2String = triangle2.innerText;
@@ -39,6 +40,16 @@ document.getElementById('btn-triangle').addEventListener('click', function () {
 
     const totalTriangleArea = triangle1Field * input1Field * input2Field;
     totalArea.innerText = totalTriangleArea.toFixed(2);
+    if (input1Field !== '') {
+        alert('not allowed string, only number');
+    }
+
+    if (input1Field < 0) {
+        alert('do not give negative number');
+    }
+    if (input2Field < 0) {
+        alert('please give positive number');
+    }
 
     
 })

@@ -29,4 +29,15 @@ document.getElementById('rectangle-btn').addEventListener('click', function(){
 
     const rectangleAreaTotal = rectInput1Field *  rectInput2Field;
     totalRectangleArea.innerText = rectangleAreaTotal.toFixed(2);
+
+    if (rectInput1Field !== '') {
+        alert('not allowed string, only number');
+    }
+
+    if (rectInput2Field < 0) {
+        alert('do not give negative number');
+    }
+    if (rectInput1Field < 0) {
+        alert('please give positive number');
+    }
 })

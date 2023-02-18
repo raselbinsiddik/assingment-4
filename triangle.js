@@ -40,10 +40,6 @@ document.getElementById('btn-triangle').addEventListener('click', function () {
 
     const totalTriangleArea = triangle1Field * input1Field * input2Field;
     totalArea.innerText = totalTriangleArea.toFixed(2);
-    if (input1Field !== '') {
-        alert('not allowed string, only number');
-    }
-
     if (input1Field < 0) {
         alert('do not give negative number');
     }

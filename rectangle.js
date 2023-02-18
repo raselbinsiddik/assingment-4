@@ -28,5 +28,5 @@ document.getElementById('rectangle-btn').addEventListener('click', function(){
     const totalRectangleAreaField = parseFloat(totalRectangleAreaString);
 
     const rectangleAreaTotal = rectInput1Field *  rectInput2Field;
-    totalRectangleArea.innerText = rectangleAreaTotal;
+    totalRectangleArea.innerText = rectangleAreaTotal.toFixed(2);
 })

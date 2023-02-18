@@ -38,7 +38,7 @@ document.getElementById('btn-triangle').addEventListener('click', function () {
     const totalAreaField = parseFloat(totalAreaString);
 
     const totalTriangleArea = triangle1Field * input1Field * input2Field;
-    totalArea.innerText = totalTriangleArea;
+    totalArea.innerText = totalTriangleArea.toFixed(2);
 
     
 })

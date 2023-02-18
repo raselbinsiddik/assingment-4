@@ -74,20 +74,25 @@
             </div>
             <div class="card-body">
               <h3 class="card-title mt-5">Parallelogram</h3>
-              <p class="card-text">Area (A) = b * h </p>
-              <p>b= 10cm, h= 12cm</p>
-              <button class="bg-primary text-white border-0 rounded-4 fs-3 mt-2 w-75">Calculate</button>
+              <p class="card-text">Area (A) = <span id="base">b</span> × <span id="height">h</span> </p>
+
+              <label class="d-inline" for=""><input class="w-25 "  type="text" name="" id="para-input1" placeholder="b">cm</label>
+              <label class="d-inline" for=""><input class="w-25 "  type="text" name="" id="para-input2" placeholder="h">cm</label>
+              
+              <button id="btn-parallelogram" class="bg-primary text-white border-0 rounded-4 fs-3 mt-2 w-75">Calculate</button>
             </div>
           </div>
         </div>
         <div class="col">
-          <div class="card h-100 text-center">
+          <div class="card h-100 ">
             <div class="card-body">
               <h5 class="card-title ">Area Calculation</h5>
               <hr>
-              <p>1. Triangle: <span id="total-area">0</span>cm<sup>2</sup><button class="bg-primary text-white border-0 rounded-2 ms-4">Calculate</button></p>
+              <p>1. Triangle: <span id="total-area">0</span>cm<sup>2</sup><button class="bg-primary text-white border-0 rounded-2 ms-2">Calculate</button></p>
 
-              <p>2. Rectangle: <span id="total-rectangle-area">0</span>cm<sup>2</sup><button class="bg-primary text-white border-0 rounded-2 ms-4">Calculate</button></p>
+              <p>2. Rectangle: <span id="total-rectangle-area">0</span>cm<sup>2</sup><button class="bg-primary text-white border-0 rounded-2 ms-2">Calculate</button></p>
+
+              <p>2. Rectangle: <span id="total-parallelogram-area">0</span>cm<sup>2</sup><button class="bg-primary text-white border-0 rounded-2 ms-2">Calculate</button></p>
             </div>
           </div>
         </div>
@@ -157,5 +162,6 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="triangle.js"></script>
     <script src="rectangle.js"></script>
+    <script src="parallelogram.js"></script>
   </body>
 </html>

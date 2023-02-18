@@ -97,6 +97,8 @@
               <p>4. Rhombus: <span id="total-rhombus-area">0</span>cm<sup>2</sup><button class="bg-primary text-white border-0 rounded-2 ms-2">Calculate</button></p>
 
               <p>5. Pentagon: <span id="total-pentagon-area">0</span>cm<sup>2</sup><button class="bg-primary text-white border-0 rounded-2 ms-2">Calculate</button></p>
+
+              <p>6. Ellipse: <span id="total-ellipse-area">0</span>cm<sup>2</sup><button class="bg-primary text-white border-0 rounded-2 ms-2">Calculate</button></p>
             </div>
           </div>
         </div>
@@ -153,10 +155,10 @@
             </div>
             <div class="card-body">
               <h3 class="card-title mt-5">Ellipse</h3>
-              <p class="card-text"> Area (A) = <span>π</span><span>a</span><span>b</span>
+              <p class="card-text"> Area (A) = <span id="pi">π</span><span id="pi-a-area">a</span><span id="pi-b-area">b</span>
               </p>
-              <p>a= 10cm, b = 3cm</p>
-               <button class="bg-primary text-white border-0 rounded-4 fs-3 mt-4 w-75">Calculate</button>
+              <p>a= <span id="pi-a">10</span> cm, b = <span id="pi-b">3</span> cm</p>
+               <button id="btn-ellipse" class="bg-primary text-white border-0 rounded-4 fs-3 mt-4 w-75">Calculate</button>
             </div>
           </div>
         </div>
@@ -169,5 +171,6 @@
     <script src="parallelogram.js"></script>
     <script src="rhombus.js"></script>
     <script src="pentagon.js"></script>
+    <script src="ellipse.js"></script>
   </body>
 </html>

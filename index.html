@@ -92,7 +92,9 @@
 
               <p>2. Rectangle: <span id="total-rectangle-area">0</span>cm<sup>2</sup><button class="bg-primary text-white border-0 rounded-2 ms-2">Calculate</button></p>
 
-              <p>2. Rectangle: <span id="total-parallelogram-area">0</span>cm<sup>2</sup><button class="bg-primary text-white border-0 rounded-2 ms-2">Calculate</button></p>
+              <p>3. Rectangle: <span id="total-parallelogram-area">0</span>cm<sup>2</sup><button class="bg-primary text-white border-0 rounded-2 ms-2">Calculate</button></p>
+
+              <p>4. Rhombus: <span id="total-rhombus-area">0</span>cm<sup>2</sup><button class="bg-primary text-white border-0 rounded-2 ms-2">Calculate</button></p>
             </div>
           </div>
         </div>
@@ -113,10 +115,10 @@
             </div>
             <div class="card-body">
               <h3 class="card-title mt-4">Rhombus</h3>
-              <p class="card-text">Area (A) = 0.5 * d<sub>1</sub> * d<sub>2</sub>
+              <p class="card-text">Area (A) = <span id="area-cm">0.5</span> × <span id="d1">d</span><sub>1</sub> × <span id="d2">d</span><sub>2</sub>
               </p>
-              <p>d<sub>1</sub>= 16cm,  d<sub>2</sub>= 8</p>
-              <button class="bg-primary text-white border-0 rounded-4 fs-3 mt-4 w-75">Calculate</button>
+              <p>d<sub>1</sub>= <span id="d1-cm">16</span> cm,  d<sub>2</sub>= <span id="d2-cm">8</span> cm</p>
+              <button id="btn-rhombus" class="bg-primary text-white border-0 rounded-4 fs-3 mt-4 w-75">Calculate</button>
             </div>
           </div>
         </div>
@@ -163,5 +165,6 @@
     <script src="triangle.js"></script>
     <script src="rectangle.js"></script>
     <script src="parallelogram.js"></script>
+    <script src="rhombus.js"></script>
   </body>
 </html>

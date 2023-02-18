@@ -25,6 +25,6 @@ document.getElementById('btn-rhombus').addEventListener('click', function () {
 
 
     const totalRhombusArea = areaCmField * d1CmField * d2CmField;
-    totalRhombus.innerText = totalRhombusArea;
+    totalRhombus.innerText = totalRhombusArea.toFixed(2);
 
 })

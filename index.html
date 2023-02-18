@@ -95,6 +95,8 @@
               <p>3. Rectangle: <span id="total-parallelogram-area">0</span>cm<sup>2</sup><button class="bg-primary text-white border-0 rounded-2 ms-2">Calculate</button></p>
 
               <p>4. Rhombus: <span id="total-rhombus-area">0</span>cm<sup>2</sup><button class="bg-primary text-white border-0 rounded-2 ms-2">Calculate</button></p>
+
+              <p>5. Pentagon: <span id="total-pentagon-area">0</span>cm<sup>2</sup><button class="bg-primary text-white border-0 rounded-2 ms-2">Calculate</button></p>
             </div>
           </div>
         </div>
@@ -133,10 +135,10 @@
             </div>
             <div class="card-body">
               <h3 class="card-title mt-1">Pentagon</h3>
-              <p class="card-text">Area (A) = <span>0.5</span> * <span>p</span> * <span>b</span></p>
-              <p>p = 6cm, b = 10cm</p>
+              <p class="card-text">Area (A) = <span id="pentagon-area">0.5</span> × <span id="pentagon-p">p</span> × <span id="pentagon-b">b</span></p>
+              <p>p =<span id="p-Cm">6</span> cm, b =<span id="b-Cm">10</span> cm</p>
 
-               <button class="bg-primary text-white border-0 rounded-4 fs-3 mt-3 w-75">Calculate</button>
+               <button id="btn-pentagon" class="bg-primary text-white border-0 rounded-4 fs-3 mt-3 w-75">Calculate</button>
             </div>
           </div>
         </div>
@@ -166,5 +168,6 @@
     <script src="rectangle.js"></script>
     <script src="parallelogram.js"></script>
     <script src="rhombus.js"></script>
+    <script src="pentagon.js"></script>
   </body>
 </html>
